@@ -5,3 +5,63 @@
     padding: 0;
     font-style: 'Space Mono' monospace ;
 }
+
+body{
+    background-color:  #C5E4E7;
+}
+
+.Title{
+    font-style:'Space Mono' monospace ; 
+    font-size: 3em;
+    text-align: center;
+    padding: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px #000000;
+
+}
+header{
+    color:#3D6666 ;
+}
+
+.Main{
+    background-color:rgba(255, 255, 255, 1) ;
+    height: 100vh;
+    padding: 3em;
+    border-radius: 43px 43px;
+}
+
+.Label{
+ font-style: "Space Mono" monospace; 
+ font-weight: bold;
+ font-size: 3em;
+ line-height: 24px;
+ text-align: left;
+ color:#5E7A7D ;
+margin-bottom: 0.4em;
+}
+
+.FirstSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.BillInput{
+    height: 48px;
+    background-color:#F3F9FA ;
+    border: none;
+}
+
+input[type="number"]{
+    padding: 1.5em;
+    font-family: "Space Mono";
+    font-size: 1.8em;
+    text-align: right;
+    color: #3D6666;
+    font-weight: bold;
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+
+}
