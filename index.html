@@ -2,6 +2,9 @@
     <head>
         <title> Tip Calculator</title>
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header >
@@ -16,12 +19,12 @@
 
             <section class="FirstSection">
                 <label id="Bill" class="Label"> Bill </label>
-                <input type="number" id="Bill"  class="BillInput"/>
+                <input type="number" id="Bill"  class="BillInput" placeholder="Enter the Total Bill"/>
             </section>
            
  <!-- Second Section will have the options that the user can select for the desired tip -->
 
- <section>
+ <section class="secondSection">
     <h2> Select Tip %</h2>
 
     <div>
@@ -41,9 +44,9 @@
 
 <!-- Third Section will have another Label with the option to select multiple people to split the money to pay -->
 
-            <section>
-                <label id="people"> Number of People </label>
-                <input type="number" id="people"/>
+            <section class="thirdSection">
+                <label id="people" class="Label"> Number of People </label>
+                <input type="number" id="people"  class="PeopleInput" placeholder="Enter the Total Amount of People"/>
             </section>
 
             <!-- Fourth Section will have the results with the total amount of tips and the individual amount to pay in tips ass well as a reset button-->

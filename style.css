@@ -7,42 +7,51 @@
 }
 
 body{
-    background-color:  #C5E4E7;
+ 
+    background: #2b5876; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2b5876, #4e4376); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2b5876, #4e4376);
 }
-
+/*Header Style */
 .Title{
-    font-style:'Space Mono' monospace ; 
+    font-family: "Space Mono";
     font-size: 3em;
     text-align: center;
     padding: 2em;
     font-weight: bold;
-    text-shadow: 1px 1px #000000;
+   
 
 }
 header{
-    color:#3D6666 ;
+    color:#ececec ;
 }
+
+/*Main Content Style */
 
 .Main{
     background-color:rgba(255, 255, 255, 1) ;
     height: 100vh;
     padding: 3em;
-    border-radius: 43px 43px;
+    border-radius: 43px 43px 0 0;
+    
 }
 
+/*First Section Style */
+
 .Label{
- font-style: "Space Mono" monospace; 
+    font-family: "Space Mono";
  font-weight: bold;
  font-size: 3em;
- line-height: 24px;
  text-align: left;
- color:#5E7A7D ;
-margin-bottom: 0.4em;
+ color:#2b5876 ;
+ margin: 0.5em;
+
 }
 
 .FirstSection{
     display: flex;
     flex-direction: column;
+    padding: 1em;
 }
 
 .BillInput{
@@ -51,17 +60,54 @@ margin-bottom: 0.4em;
     border: none;
 }
 
-input[type="number"]{
-    padding: 1.5em;
+.BillInput[type="number"]{
+    padding: 1em;
     font-family: "Space Mono";
     font-size: 1.8em;
     text-align: right;
     color: #3D6666;
     font-weight: bold;
     -moz-appearance: textfield;
+    background-image: url('assets/dollar.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
+
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+
+}
+/*Second Section Style */
+.secondSection{
+    padding: 1em;
+}
+/*Third Section Style */
+
+.thirdSection{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1em;
+}
+.PeopleInput{
+    height: 48px;
+    background-color:#F3F9FA ;
+    border: none;
+}
+
+.PeopleInput[type="number"]{
+    padding: 1em;
+    font-family: "Space Mono";
+    font-size: 1.8em;
+    text-align: right;
+    color: #3D6666;
+    font-weight: bold;
+    -moz-appearance: textfield;
+    background-image: url('assets/group.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
 
 }
