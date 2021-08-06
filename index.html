@@ -1,10 +1,11 @@
 <html>
     <head>
         <title> Tip Calculator</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="./style.css"/>
         <link rel="stylesheet" 
           href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./bootstrap-grid.min.css"/>
     </head>
     <body>
         <header >
@@ -25,15 +26,14 @@
  <!-- Second Section will have the options that the user can select for the desired tip -->
 
  <section class="secondSection">
-    <h2> Select Tip %</h2>
-
-    <div>
-        <ul>
-            <li>5%</li>
+    <h2  class="Label subTitle"> Select Tip %</h2>
+    <div class="container optionsContainer">
+        <ul class="row firstRow">
+            <li >5%</li>
             <li>15%</li>
             <li>50%</li>
         </ul>
-        <ul>
+        <ul class="row secondRow">
             <li>10%</li>
             <li>25%</li>
             <li>Custom</li>

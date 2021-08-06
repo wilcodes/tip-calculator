@@ -83,6 +83,22 @@ input::-webkit-inner-spin-button {
 .secondSection{
     padding: 1em;
 }
+
+.subTitle{
+   text-shadow: 1px 1px #4e4376 ; 
+}
+.optionsContainer{
+    display: flex;
+    flex-direction: row wrap;
+}
+.firstRow{
+display: flex; 
+flex-direction: column wrap;
+}
+.secondRow{
+    display: flex; 
+    flex-direction: column wrap;
+}
 /*Third Section Style */
 
 .thirdSection{
