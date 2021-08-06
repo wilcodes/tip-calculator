@@ -30,7 +30,7 @@ header{
 
 .Main{
     background-color:rgba(255, 255, 255, 1) ;
-    height: 100vh;
+    height: 100%;
     padding: 3em;
     border-radius: 43px 43px 0 0;
     
@@ -88,16 +88,37 @@ input::-webkit-inner-spin-button {
    text-shadow: 1px 1px #4e4376 ; 
 }
 .optionsContainer{
-    display: flex;
-    flex-direction: row wrap;
+  
 }
-.firstRow{
-display: flex; 
-flex-direction: column wrap;
+.firstRow, .secondRow, .thirdRow{
+    list-style: none;
 }
-.secondRow{
-    display: flex; 
-    flex-direction: column wrap;
+.tipSelection{
+   padding: 1em;
+   text-align: center;
+   font-family: "Space Mono";
+   color: #ffffff;
+   font-size: 2.5em;
+   line-height: 24px;
+   font-weight: bold;
+   border-radius:  43px 43px ;
+   background-color: rgba(0, 54, 75, 0.89);
+   margin: 0.8em;
+   height: 0.8em;
+   cursor: pointer;
+   
+}
+.custom{
+    background-color:#F3F9FA ;
+    color: #2b5876;
+}
+.tipSelection:hover{
+    background-color: #011116d8;
+    transition: 0.5s;
+}
+
+.el{
+
 }
 /*Third Section Style */
 
