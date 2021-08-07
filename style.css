@@ -95,7 +95,6 @@ input::-webkit-inner-spin-button {
 }
 .tipSelection{
    padding: 1em;
-   text-align: center;
    font-family: "Space Mono";
    color: #ffffff;
    font-size: 2.5em;
@@ -104,9 +103,11 @@ input::-webkit-inner-spin-button {
    border-radius:  43px 43px ;
    background-color: rgba(0, 54, 75, 0.89);
    margin: 0.8em;
-   height: 0.8em;
    cursor: pointer;
-   
+   width: auto;
+   text-decoration: none;
+   text-align: center;
+   width: 7em;
 }
 .custom{
     background-color:#F3F9FA ;
@@ -117,9 +118,11 @@ input::-webkit-inner-spin-button {
     transition: 0.5s;
 }
 
-.el{
+button{
 
 }
+
+
 /*Third Section Style */
 
 .thirdSection{
