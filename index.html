@@ -12,9 +12,8 @@
             <h1 class="Title">
                 Tip Calculator by Wilcodes
             </h1>
-          
-        
         </header>
+
         <main class="Main">
             <!-- First Section will have a label and the input for the amount of money spent on the Bill-->
 
@@ -69,20 +68,20 @@
 
             <!-- Fourth Section will have the results with the total amount of tips and the individual amount to pay in tips ass well as a reset button-->
 
-            <section>
-                <ul>
-                    <li>
-                        Tip Amount <span>/ person  </span>
+            <section class="container-fluid fourSection">
+                <ul class="row">
+                    <li class="col labelResult"> 
+                        Tip Amount <br/> <br/><span>/ person  </span>
                     </li>
-                    <li> $4.97</li>
+                    <li class="col result"> $4.97</li> 
                 </ul>
-                <ul>
-                    <li>
-                        Total <span>/ person  </span>
+                <ul class="row"> 
+                    <li  class="col labelResult">
+                        Total  <br/><br/> <span>/ person  </span>
                     </li>
-                    <li> $32.97</li>
+                    <li class="col result"> $32.97</li>
                 </ul>
-                <button> Reset </button>
+                <button class="tipSelection reset" > Reset </button>
             </section>
         </main>
     </body>
