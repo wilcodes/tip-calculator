@@ -30,7 +30,7 @@ header{
 
 .Main{
     background-color:rgba(255, 255, 255, 1) ;
-    height: 100%;
+    height: auto;
     padding: 3em;
     border-radius: 43px 43px 0 0;
     
@@ -88,9 +88,7 @@ input::-webkit-inner-spin-button {
    text-shadow: 1px 1px #4e4376 ; 
 }
 
-.firstRow, .secondRow, .thirdRow{
-    list-style: none;
-}
+
 .tipSelection{
    padding: 1em;
    font-family: "Space Mono";
@@ -102,7 +100,6 @@ input::-webkit-inner-spin-button {
    background-color: rgba(0, 54, 75, 0.89);
    margin: 0.8em;
    cursor: pointer;
-   width: auto;
    text-decoration: none;
    text-align: center;
    width: 7em;
@@ -110,6 +107,9 @@ input::-webkit-inner-spin-button {
 .custom{
     background-color:#F3F9FA ;
     color: #2b5876;
+}
+.custom:hover{
+    color: #ffffff;
 }
 .tipSelection:hover{
     background-color: #011116d8;
@@ -150,7 +150,7 @@ input::-webkit-inner-spin-button {
 /*Four Section Style */
 
 .fourSection{
-padding: 1em;
+    padding: 1em;
    font-family: "Space Mono";
    color: #ffffff;
    font-size: 2.2em;
@@ -160,7 +160,6 @@ padding: 1em;
    background-color: rgba(0, 54, 75, 0.89);
    margin-top: 2em;
    cursor: pointer;
-   width: auto;
    text-decoration: none;
    text-align: center;
    width: auto;
@@ -189,8 +188,101 @@ padding: 1em;
 ul{
     list-style: none;
    padding: 1em;
+   
 }
 
 span{
      color: #7f9d9f;
 }
+/*Media Queries */
+     
+  @media only screen and (min-width: 700px){
+    .Main{
+      height: max-content;
+    }
+
+  }
+  @media only screen and (min-width: 1025px){
+      
+    /*Global Section Styles */
+    .Main{
+       width: 70%;
+       border-radius: 43px;
+       margin: 0 auto;
+       height: 70%;
+       display: flex;
+        padding: 0.5em;
+      
+    }
+    .leftSide{
+        flex: 0 0 47%;
+        height: fit-content;
+    }
+
+    .rightSide{
+        flex: 0 0 47%;
+        height: fit-content;
+    }
+    
+/*First Section Style */
+    .Title{
+        padding: 0.5em;
+    }
+
+    .Label{
+        font-size: 1.4em;
+    }
+
+
+    
+    .BillInput[type="number"]{
+        padding: 0.5em;
+        font-size: 1em;
+        width: 90%;
+    }
+
+    
+
+    /*Second Section Style */
+    .secondSection{
+        padding: 0.5em;
+    }
+
+    .tipSelection{
+        padding: 0.6em;
+        width: 6em ;
+        margin: 0.3em 0;
+        font-size: 1.2em;
+        border-radius: 10px;
+    }
+    .optionsContainer{
+        display: flex;
+        align-items: center;
+    
+    }
+    /*Third Section Style */
+
+   
+    
+    .PeopleInput[type="number"]{
+        padding: 0.5em;
+        font-size: 1em;
+        width: 90%;
+    }
+
+    /*fourth Section Style */
+
+    .fourSection{
+        padding: 0.5em;
+        margin: 2em;
+        height: 85% ;
+        font-size: 1.6em;
+    }
+    .reset{
+        width: 80%;
+        margin-top: 3em;
+    }
+
+  }
+
+  
