@@ -8,10 +8,10 @@ const tipOptions = {
     sixthOption: 50
 }
 //Declaring the variables where the App will store the data
-let numPeople;
-let totalBill;
-let tipAmount;
-let totalAmountPerson;
+let numPeople = 0;
+let totalBill = 0;
+let tipAmount = 0;
+let totalAmountPerson = 0;
 
 //Getting The first Input from the user and storing the data in the variables declared previously
 const getUserInput = () => {
@@ -28,8 +28,22 @@ const getNumPeople = () => {
 getUserInput();
 getNumPeople();
 
-const selectingTipAmount = (userSelection) => {
+const selectingTipAmount = (userSelection, people) => {
     tipAmount = (totalBill * userSelection) / 100;
-    console.log(tipAmount)
+    if (people > 0) {
+        totalAmountPerson = Math.round((tipAmount / people) * 100) / 100;
+    }
+    userInterfaceHandler();
 }
+
+const userInterfaceHandler = () => {
+    document.querySelector("#tip").textContent = tipAmount + "$";
+    document.querySelector("#personTip").textContent = totalAmountPerson;
+}
+
+const resetApp = () => {
+
+}
+
+
 
