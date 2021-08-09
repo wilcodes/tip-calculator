@@ -19,6 +19,7 @@ body{
     text-align: center;
     padding: 2em;
     font-weight: bold;
+    margin-bottom: 1em;
    
 
 }
@@ -58,6 +59,10 @@ header{
     height: 48px;
     background-color:#F3F9FA ;
     border: none;
+}
+
+.error{
+    border: 2px solid #ff0000;
 }
 
 .BillInput[type="number"]{
@@ -106,15 +111,9 @@ input::-webkit-inner-spin-button {
    border: 1px solid #2b5876;
   
 }
-.custom{
-    background-color:#F3F9FA ;
-    color: #2b5876;
-}
-.custom:hover{
-    color: #ffffff;
-}
+
 .tipSelection:hover{
-    background-color: #011116d8;
+    background-color: #406690d8;
     transition: 0.5s;
 }
 
@@ -287,4 +286,8 @@ span{
 
   }
 
-  
+    /*Error Classes */
+
+    .PeopleInput{
+       border: 3px solid #faf3f3;
+    }

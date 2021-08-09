@@ -3,9 +3,9 @@ const tipOptions = {
     firstOption: 5,
     secondOption: 10,
     thirdOption: 15,
-    fourthOption: 20,
-    fifthOption: 25,
-    sixthOption: 50
+    fourthOption: 18,
+    fifthOption: 20,
+    sixthOption: 25
 }
 //Declaring the variables where the App will store the data
 let numPeople = 0;
@@ -28,11 +28,22 @@ const getNumPeople = () => {
 getUserInput();
 getNumPeople();
 
+const errorStyleHandler = () => {
+    if (totalBill == 0) {
+        document.querySelector(".BillInput").style.border = "2px solid #ff0000";
+    }
+    if (totalBill > 0) {
+        document.querySelector(".BillInput").style.border = "none";
+    }
+
+}
+
 const selectingTipAmount = (userSelection, people) => {
     tipAmount = (totalBill * userSelection) / 100;
     if (people > 0) {
         totalAmountPerson = Math.round((tipAmount / people) * 100) / 100;
     }
+    errorStyleHandler();
     userInterfaceHandler();
 }
 
