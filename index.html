@@ -1,11 +1,13 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <title> Tip Calculator</title>
+        <meta charset="utf-8">
+        <meta name="description" content="A simple HTML5, CSS and Js Tip Calculator.">
+        <meta name="Wilfredo Colina" content="tipCalculator">
         <link rel="stylesheet" href="./style.css"/>
-        <link rel="stylesheet" 
-          href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./bootstrap-grid.min.css"/>
+        <link rel="icon" href="/assets/favicon/icons8-calculator-50.png">
     </head>
     <body>
         <header >
@@ -20,7 +22,7 @@
                 <!-- First Section will have a label and the input for the amount of money spent on the Bill-->
                 <section class="FirstSection">
                     <label id="Bill" class="Label"> Bill </label>
-                    <input type="number" id="Bill"  class="BillInput" placeholder="Enter the Total Bill"/>
+                    <input type="number" id="Bill"  class="BillInput" placeholder="Enter the Total Bill" onblur="getUserInput()"/>
                 </section>
                
      <!-- Second Section will have the options that the user can select for the desired tip -->
@@ -30,28 +32,28 @@
         <div class="container-fluid optionsContainer">
             <ul class="row firstRow">
                 <li class="col el">
-                    <button class="tipSelection"> 5% </button>   
+                    <button class="tipSelection" id="first" type="button" onclick="selectingTipAmount(tipOptions.firstOption)"> 5% </button>   
                 </li>
                 <li class="col el">
-                    <button class="tipSelection"> 10%</button>    
+                    <button class="tipSelection" id="second" type="button" onclick="selectingTipAmount(tipOptions.secondOption) "> 10%</button>    
                 </li>
                 
             </ul>
             <ul class="row secondRow">
                 <li class="col el">
-                  <button class="tipSelection"> 15% </button>  
+                  <button class="tipSelection" id="third"  type="button " onclick="selectingTipAmount(tipOptions.thirdOption) "> 15% </button>  
                 </li>
                 <li class="col el">
-                  <button class="tipSelection"> 25% </button>
+                  <button class="tipSelection" id="fourth"  type="button" onclick="selectingTipAmount(tipOptions.fourthOption) "> 20% </button>
                 </li>
                 
             </ul>
             <ul class="row thirdRow">
                 <li class="col el">
-                    <button class="tipSelection"> 50% </button>
+                    <button class="tipSelection" id="fifth" type="button" onclick="selectingTipAmount(tipOptions.fifthOption) " > 25% </button>
                 </li>
                 <li class="col el">
-                    <button class="tipSelection custom"> Custom </button>
+                    <button class="tipSelection custom" id="sixth" type="button" onclick="selectingTipAmount(tipOptions.sixthOption) "> 50% </button>
                 </li>
                 
             </ul>
@@ -64,7 +66,7 @@
     
                 <section class="thirdSection">
                     <label id="people" class="Label"> Number of People </label>
-                    <input type="number" id="people"  class="PeopleInput" placeholder="Enter the Total Amount of People"/>
+                    <input type="number" id="people"  class="PeopleInput" placeholder="Enter the Total Amount of People" onblur="getNumPeople()"/>
                 </section>
 
             </section>
@@ -90,5 +92,8 @@
             </section>
             
         </main>
+        <script src="/app.js"></script>
     </body>
+    
+
 </html>

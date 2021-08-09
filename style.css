@@ -103,6 +103,8 @@ input::-webkit-inner-spin-button {
    text-decoration: none;
    text-align: center;
    width: 7em;
+   border: 1px solid #2b5876;
+  
 }
 .custom{
     background-color:#F3F9FA ;
