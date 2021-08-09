@@ -39,9 +39,9 @@ const errorStyleHandler = () => {
 }
 
 const selectingTipAmount = (userSelection, people) => {
-    tipAmount = (totalBill * userSelection) / 100;
+    tipAmount = ((totalBill * userSelection) / 100).toFixed(2);
     if (people > 0) {
-        totalAmountPerson = Math.round((tipAmount / people) * 100) / 100;
+        totalAmountPerson = (tipAmount / people).toFixed(2);
     }
     errorStyleHandler();
     userInterfaceHandler();
