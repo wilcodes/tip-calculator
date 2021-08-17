@@ -1,5 +1,5 @@
 # tip-calculator🧮
-##Tip Calculator created with:
+### Tip Calculator created with:
 -HTML5, 
 -CSS  
 JavaScript.
