@@ -12,12 +12,13 @@ let numPeople = 0;
 let totalBill = 0;
 let tipAmount = 0;
 let totalAmountPerson = 0;
+let finalCheck = 0;
 
 //Getting The first Input from the user and storing the data in the variables declared previously
 const getUserInput = () => {
 
     let userInput = document.querySelector(".BillInput").value;
-    totalBill = userInput;
+    totalBill = Number(userInput);
 }
 const getNumPeople = () => {
 
@@ -39,22 +40,29 @@ const errorStyleHandler = () => {
 }
 
 const selectingTipAmount = (userSelection, people) => {
-    tipAmount = ((totalBill * userSelection) / 100).toFixed(2);
+
+
+    tipAmount = ((totalBill * userSelection) / 100);
+
+    finalCheck = (Number(totalBill) + Number(tipAmount));
+
+
     if (people > 0) {
-        totalAmountPerson = (tipAmount / people).toFixed(2);
+        totalAmountPerson = (tipAmount / people);
     }
     errorStyleHandler();
     userInterfaceHandler();
 }
 
+
+
 const userInterfaceHandler = () => {
-    document.querySelector("#tip").textContent = tipAmount + "$";
-    document.querySelector("#personTip").textContent = totalAmountPerson;
+    document.querySelector("#tip").textContent = tipAmount.toFixed(2) + "$";
+    document.querySelector("#personTip").textContent = totalAmountPerson.toFixed(2) + "$";
+    document.querySelector('#check').textContent = finalCheck.toFixed(2) + "$";
 }
 
-const resetApp = () => {
 
-}
 
 
 
