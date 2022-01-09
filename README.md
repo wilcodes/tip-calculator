@@ -1,8 +1,8 @@
 # tip-calculator🧮
 ### Tip Calculator created with:
-- HTML5, 
+- HTML5
 - CSS  
-- JavaScript.
+- JavaScript
 
 
 ## The application allows you to:
