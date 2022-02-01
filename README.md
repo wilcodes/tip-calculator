@@ -7,7 +7,7 @@
 
 ## The application allows you to:
 - Input a bill and based on the options you can choose the desired tip.💵
-- You can also split the amount of money between different people and get the amount to pay the tip for each person😀
+- You can also split the amount of money between different people and get the tip amount of each person.😀
 
 
 ### I have used:
